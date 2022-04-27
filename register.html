@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Dreamy Cafe - Register</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="./images/logo.png" />
+        <!--https://looka.com/s/87766543-->
+      </a>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./register.html">Register</a>
+        <a href="./order.html">Order</a>
+      </nav>
+    </header>
+    <main>
+      <form
+        action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php"
+        method="post"
+      >
+        <label for="name">Name*</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email"
+          required
+        />
+        <label for="password">Password*</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Your password"
+          required
+        />
+        <label for="rpassword">Retype password*</label>
+        <input
+          type="password"
+          id="rpassword"
+          name="rpassword"
+          placeholder="Your password"
+          required
+        />
+        <label for="gender">Gender*</label>
+        <div id="gender">
+          <input
+            type="radio"
+            id="gender1"
+            name="gender"
+            value="male"
+            required
+          />
+          <label for="gender1">Male</label>
+          <input
+            type="radio"
+            id="gender2"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="gender2">Female</label>
+        </div>
+        <label for="membership">Membership type*</label>
+        <select name="membership" id="membership">
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+          <option value="student">Student</option>
+        </select>
+        <div>
+          <input
+            type="checkbox"
+            id="term"
+            name="term"
+            value="agreed"
+            required
+          />
+          <label for="term">Agree to Terms and Conditions</label>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
